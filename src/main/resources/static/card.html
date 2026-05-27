@@ -3,6 +3,8 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="css/site.css" />
+    <link rel="stylesheet" type="text/css" href="css/card.css" />
+
   </head>
   <body>
     
@@ -12,8 +14,15 @@
       <a href = "#contact">Contact</a>
       <a href = "#about">About</a>
     </div>
-
-    <h2>Hello from HOME</h2>
+    
+    <div class="card">
+      <img id = "image" src="img/john.png" alt="Avatar" style="width: 100%" />
+      <div class="class-container">
+        <h4 id = "name"><b>John Doe</b></h4>
+        <p id = "gender">Male</p>
+        <button onclick="toggle()">Toggle</button>
+      </div>
+    </div>
 
     <script src = "js/site.js"></script>
   </body>
