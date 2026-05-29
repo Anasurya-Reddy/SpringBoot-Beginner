@@ -1,0 +1,48 @@
+package com.anasuryareddy.WebProject.model;
+
+public class User {
+    private int id;
+    private String name, gender, image;
+
+    public User() {
+    }
+
+    public User(int id, String name, String gender, String image) {
+        this.id = id;
+        this.name = name;
+        this.gender = gender;
+        this.image = image;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    
+    public String getName() {
+        return name;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getImage() {
+        return image;
+    }
+}
