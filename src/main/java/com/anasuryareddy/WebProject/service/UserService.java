@@ -13,6 +13,7 @@ public class UserService {
         allUsers = new ArrayList<>();
         allUsers.add(new User(1, "Anasurya Reddy", "Male", "img/john.png"));
         allUsers.add(new User(2, "Jane Doe", "Female", "img/jane.png"));
+        allUsers.add(new User(3, "Bob Smith", "Male", "img/john.png"));
     }
 
     public List<User> getAllUsers() {
