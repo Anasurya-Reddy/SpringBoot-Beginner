@@ -4,12 +4,13 @@ function getAndDisplayNextRandomUser() {
             return res.json();
         })
         .then(function (data) {
-            let id = Math.floor(Math.random() * 3);
-            var user = Array.isArray(data) ? data[id] : (data.results ? data.results[id] : null);
-            if (!user) {
+            var userList = Array.isArray(data) ? data : (data.results ? data.results : []);
+            if (userList.length === 0) {
                 console.error('No user data returned');
                 return;
             }
+            var id = Math.floor(Math.random() * userList.length);
+            var user = userList[id];
             var userData = {
                 name: user.name,
                 gender: user.gender,
